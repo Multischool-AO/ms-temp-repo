@@ -8,7 +8,7 @@ import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 import { z } from "zod";
 import ProductDetails from "./components/product-details";
-import ProductOptions from "./components/product-options";
+//import ProductOptions from "./components/product-options";
 import { useGlobalContext } from "@/context/store";
 import { useAddProduct } from "@/api-hooks/products/add-product";
 import { useEffect } from "react";

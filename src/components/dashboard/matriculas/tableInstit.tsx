@@ -404,13 +404,14 @@ export default function TableInstit() {
 
   return (
     <>
+    {/** 
       {selectedmatrId !== null && (
         <DeleteModal
           isOpen={isModalOpen}
           onClose={closeModal}
           cadId={selectedmatrId || 0}
         />
-      )}
+      )} */}
       {/* Sheet */}
       <SheetMatr
         isOpen={isSheetOpen}

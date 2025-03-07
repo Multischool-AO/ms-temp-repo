@@ -34,7 +34,7 @@ import {
 } from "@/components/ui/carousel";
 import TableInstit from "@/components/dashboard/matriculas/tableInstit";
 
-export function DetailsStudent() {
+function DetailsStudent() {
   const { id } = useParams(); // Captura o número de matrícula da URL
 
   // Verificar se nmatr existe e garantir que seja uma string

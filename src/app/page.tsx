@@ -9,7 +9,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Input } from "@heroui/input";
 
-export const EyeSlashFilledIcon = (props: React.SVGProps<SVGSVGElement>) => {
+const EyeSlashFilledIcon = (props: React.SVGProps<SVGSVGElement>) => {
   return (
     <svg
       aria-hidden="true"
@@ -45,7 +45,7 @@ export const EyeSlashFilledIcon = (props: React.SVGProps<SVGSVGElement>) => {
   );
 };
 
-export const EyeFilledIcon = (props: React.SVGProps<SVGSVGElement>) => {
+ const EyeFilledIcon = (props: React.SVGProps<SVGSVGElement>) => {
   return (
     <svg
       aria-hidden="true"

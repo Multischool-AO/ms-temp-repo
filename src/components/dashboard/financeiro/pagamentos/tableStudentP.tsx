@@ -422,13 +422,14 @@ export default function TableStudentP() {
 
   return (
     <>
+    {/** 
       {selectedDeptId !== null && (
         <DeleteModal
           isOpen={isModalOpen}
           onClose={closeModal}
           cadId={selectedDeptId}
         />
-      )}
+      )} */}
       {/* Sheet */}
       <SheetEst
         isOpen={isSheetOpen}

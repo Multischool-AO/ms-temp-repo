@@ -7,7 +7,7 @@ import { Button } from "@heroui/react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import ProductDetails from "./components/product-details";
-import ProductOptions from "./components/product-options";
+//import ProductOptions from "./components/product-options";
 import { useGlobalContext } from "@/context/store";
 import { useEffect } from "react";
 import { useEditProduct } from "@/api-hooks/products/edit-product";
@@ -64,7 +64,7 @@ const EditProductForm = ({ product }: { product: EditProductProps }) => {
       >
         <div className="flex flex-col md:flex-row">
           <ProductDetails form={form} />
-          <ProductOptions form={form} />
+           {/*<ProductOptions form={form} /> */}
         </div>
         <div className="flex justify-end border-t p-5">
           <Button

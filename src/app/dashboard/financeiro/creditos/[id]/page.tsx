@@ -25,7 +25,7 @@ export default function Estudante() {
   );
 }
 
-export function DetailsStudent() {
+function DetailsStudent() {
   const { id } = useParams(); // Captura o número de matrícula da URL
 
   // Verificar se nmatr existe e garantir que seja uma string

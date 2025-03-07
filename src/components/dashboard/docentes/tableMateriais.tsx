@@ -493,20 +493,22 @@ export default function TableMateriais() {
 
   return (
     <>
+    {/** 
       {selectedDeptId !== null && (
         <DeleteModal
           isOpen={isModalOpen}
           onClose={closeModal}
           cadId={selectedDeptId}
         />
-      )}
+      )} */}
       {/* Sheet */}
+      {/** 
       <SheetDocentes
         isOpen={isSheetOpen}
         onClose={closeSheet}
         cadId={selectedDeptId || 0}
         isEditMode={!!selectedDeptId}
-      />
+      /> */}
       <Table
         isHeaderSticky
         aria-label="Example table with custom cells, pagination and sorting"

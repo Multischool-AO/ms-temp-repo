@@ -478,13 +478,14 @@ export default function TableCadeiras() {
 
   return (
     <>
+       {/*
       {selectedDeptId !== null && (
         <DeleteModal
           isOpen={isModalOpen}
           onClose={closeModal}
-          cadId={selectedDeptId}
+          itemId={selectedDeptId}
         />
-      )}
+      )} */}
       {/* Sheet */}
       <SheetCad
         isOpen={isSheetOpen}

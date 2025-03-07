@@ -163,7 +163,7 @@ const ProductDetails = ({ form }: ProductFormProps) => {
                 }}
               >
                 {/* Gerar os semestres de 1 a 11 */}
-                {[...Array(11).keys()].map((i) => (
+                {[1,2, 3, 4, 5, 6, 7, 8, 9,10, 11].map((i) => (
                   <SelectItem key={i + 1} value={String(i + 1)}>
                     {`${i + 1}º Semestre`}
                   </SelectItem>

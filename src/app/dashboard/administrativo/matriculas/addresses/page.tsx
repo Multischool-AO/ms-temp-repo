@@ -5,7 +5,7 @@ import { QueryClient } from "@tanstack/react-query";
 import AddressTable from "@/components/customers/tables/address-table";
 import { getAddressesServer } from "@/lib/api/get-addresses";
 
-const page = async () => {
+const Page = async () => {
   const queryClient = new QueryClient();
   await queryClient.prefetchQuery({
     queryKey: ["addresses"],
@@ -22,4 +22,4 @@ const page = async () => {
   );
 };
 
-export default page;
+export default Page;

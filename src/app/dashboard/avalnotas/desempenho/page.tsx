@@ -105,9 +105,7 @@ export default function ReportsPage() {
       label: "Mobile",
       color: "var(--color-safari)",
     },
-    label: {
-      color: "hsl(var(--background))",
-    },
+   
   } satisfies ChartConfig;
 
   return (

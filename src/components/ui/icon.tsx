@@ -1,5 +1,6 @@
 import React, { SVGProps } from "react";
 import { IconProps } from "../../lib/types/icon";
+import Image from "next/image";
 
 // Defina os caminhos das imagens
 const iconImages = {
@@ -21,7 +22,7 @@ const Icon = ({ name, size = 18, className }: IconProps) => {
   }
 
   return (
-    <img
+    <Image
       src={iconSrc}
       alt={name}
       width={size}

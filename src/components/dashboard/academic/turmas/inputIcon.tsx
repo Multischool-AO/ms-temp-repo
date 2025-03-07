@@ -7,6 +7,12 @@ export const CameraIcon = ({
   height,
   width,
   ...props
+}: {
+  fill?: string;
+  size?: number;
+  height?: number;
+  width?: number;
+  [key: string]: any;
 }) => {
   return (
     <svg

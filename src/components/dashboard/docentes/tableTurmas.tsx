@@ -388,13 +388,14 @@ export default function TableTurmas() {
 
   return (
     <>
+    {/** 
       {selectedDeptId !== null && (
         <DeleteModal
           isOpen={isModalOpen}
           onClose={closeModal}
           cadId={selectedDeptId}
         />
-      )}
+      )} */}
       {/* Sheet */}
       {/* <SheetEst
         isOpen={isSheetOpen}

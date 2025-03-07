@@ -486,13 +486,14 @@ export default function TableMatr() {
 
   return (
     <>
+    {/** 
       {selectedmatrId !== null && (
         <DeleteModal
           isOpen={isModalOpen}
           onClose={closeModal}
           cadId={selectedmatrId || 0}
         />
-      )}
+      )} */}
       {/* Sheet */}
       <SheetMatr
         isOpen={isSheetOpen}

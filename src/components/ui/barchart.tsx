@@ -45,9 +45,7 @@ const chartConfig = {
     label: "Mobile",
     color: "hsl(var(--chart-2))",
   },
-  label: {
-    color: "hsl(var(--background))",
-  },
+ 
 } satisfies ChartConfig;
 
 export function ResumePay() {

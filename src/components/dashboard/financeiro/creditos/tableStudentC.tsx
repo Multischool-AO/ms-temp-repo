@@ -186,7 +186,7 @@ export default function TableStudentC() {
             {/* <p className="text-bold text-small capitalize">{cellValue}</p> */}
             <p className="text-bold text-tiny capitalize text-default-400">
               <User
-                avatarProps={{ radius: "lg", src: est.avatar }}
+             //   avatarProps={{ radius: "lg", src: est.avatar }}
                 description={est.nmatr}
                 name={cellValue}
               >
@@ -415,13 +415,14 @@ export default function TableStudentC() {
 
   return (
     <>
+    {/**
       {selectedDeptId !== null && (
         <DeleteModal
           isOpen={isModalOpen}
           onClose={closeModal}
           cadId={selectedDeptId}
         />
-      )}
+      )}  */}
       {/* Sheet */}
       <SheetEst
         isOpen={isSheetOpen}

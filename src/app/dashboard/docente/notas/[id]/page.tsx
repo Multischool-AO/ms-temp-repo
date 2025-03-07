@@ -291,10 +291,10 @@ const studentsData = [
 ];
 
 
-export function EditableGradesTable() {
+function EditableGradesTable() {
   const [students, setStudents] = useState(studentsData);
 
-  const handleChange = (id, field, value) => {
+  const handleChange = (id:number, field:string, value:string) => {
     let numericValue = parseFloat(value);
     if (numericValue < 1) numericValue = 1;
     if (numericValue > 20) numericValue = 20;
@@ -312,7 +312,7 @@ export function EditableGradesTable() {
     );
   };
 
-  const calculateMedia = (student) => {
+  const calculateMedia = (student:any) => {
     const PP1 = parseFloat(student.PP1) || 0;
     const PP2 = parseFloat(student.PP2) || 0;
     const exame = parseFloat(student.exame) || 0;
@@ -325,7 +325,7 @@ export function EditableGradesTable() {
     return (mediaPPs + mediaExame).toFixed(2);
   };
 
-  const determineStatus = (student) => {
+  const determineStatus = (student:any) => {
     const media = parseFloat(student.media);
     if (isNaN(media)) return "Recurso";
     if (media > 9.3) return "Aprovado";
@@ -361,11 +361,11 @@ export function EditableGradesTable() {
               <TableCell>{student.nome}</TableCell>
               <TableCell>{student.turma}</TableCell>
               <TableCell>{student.curso}</TableCell>
-              {["PP1", "PP2", "exame", "recurso"].map((field) => (
+              {["PP1", "PP2", "exame", "recurso"].map((field:string) => (
                 <TableCell key={field}>
                   <Input2
                     type="number"
-                    value={student[field] || ""}
+                   // value={(student[field] || ""}
                     onChange={(e) =>
                       handleChange(student.id, field, e.target.value)
                     }

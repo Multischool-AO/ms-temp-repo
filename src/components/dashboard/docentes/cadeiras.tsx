@@ -134,13 +134,14 @@ const TurmaList: React.FC = () => {
 
   return (
     <div>
+      {/** 
       {selectedTurmaId !== null && (
         <DeleteModal
           isOpen={isModalOpen}
           onClose={closeModal}
           turmaId={selectedTurmaId}
         />
-      )}
+      )} */}
       {/* Sheet */}
       <SheetDocentes
         isOpen={isSheetOpen}
